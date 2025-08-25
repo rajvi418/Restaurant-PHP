@@ -14,7 +14,7 @@
         <form action="Pages/Dashboard.html" method="post">
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <a href="Pages/Dashboard.html"><button type="submit">Login</button></a>
         </form>
     </section>
 </body>
