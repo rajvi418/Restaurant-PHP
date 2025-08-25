@@ -177,7 +177,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 49%;
-    margin-bottom: 30px;
     height: 300px;
     justify-content: flex-start;
 }
@@ -190,4 +189,14 @@ body {
 .profit-card p {
     font-size: 28px;
     margin-bottom: 100px;
+}
+
+footer {
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    color: #470c0c;
+    width: 100%;
+    font-size: 18px;
 }
