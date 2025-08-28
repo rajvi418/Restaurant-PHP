@@ -11,6 +11,35 @@ body {
     color: #fff;
 }
 
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-warning {
+    background: #f39c12;
+    color: white;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-secondary {
+    background: #7f8c8d;
+    color: white;
+}
+
 .universal-btn {
     background-color: #470c0c;
     color: white;
@@ -240,7 +269,7 @@ body {
 }
 
 .menu-management th {
-    font-size: 28px;
+    font-size: 26px;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -249,7 +278,7 @@ body {
     padding: 10px 5px;
     color: black;
     border-bottom: 1px solid #999797;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
 }
 
