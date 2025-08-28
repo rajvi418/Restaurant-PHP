@@ -3,10 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Restaurant Menu</title>
     <link rel="stylesheet" href="../CSS/font.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <!-- <style>
+        .btn {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 4px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+        }
+
+        .btn-warning {
+            background: #f39c12;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #e74c3c;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #7f8c8d;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+        }
+
+        tr:hover {
+            background: #f1f1f1;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+    </style> -->
 </head>
 
 <body>
@@ -15,13 +72,140 @@
             <img src="../Logo/logo.png" alt="Logo">
         </div>
         <div class="slider-section">
-            <h3><a href="/Pages/Dashboard.html">Dashboard</a></h3>
-            <h3><a href="/Pages/menu-management.html">Menu Management</a></h3>
-            <h3><a href="/Pages/staff-management.html">Staff Management</a></h3>
-            <h3><a href="/Pages/settings.html">Settings & Preferences</a></h3>
-            <h3><a href="/Pages/account.html">Account</a></h3>
+            <h3><a href="Dashboard.html">Dashboard</a></h3>
+            <h3><a href="menu-management.html">Menu Management</a></h3>
+            <h3><a href="staff-management.html">Staff Management</a></h3>
+            <h3><a href="settings.html">Settings & Preferences</a></h3>
+            <h3><a href="account.html">Account</a></h3>
         </div>
     </header>
+    <section class="management-container">
+        <div class="menu-header">
+            <h3 class="title">Restaurant Menu</h3>
+            <a href="add_item.php" class="universal-btn">+ Add Item</a>
+        </div>
+        <table class="menu-management">
+            <tr class="table-header">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+            <tr class="table-data">
+                <td>1</td>
+                <td>Margherita Pizza</td>
+                <td>Classic cheese & tomato</td>
+                <td>$8.50</td>
+                <td>Pizza</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>2</td>
+                <td>Spaghetti Carbonara</td>
+                <td>Pasta, egg, cheese, pork.</td>
+                <td>$7.00</td>
+                <td>Pasta</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>3</td>
+                <td>Lasagna alla Bolognese.</td>
+                <td>Layered pasta, meat, creamy sauce.</td>
+                <td>$6.00</td>
+                <td>Pasta</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>4</td>
+                <td>Pizza Marinara</td>
+                <td>Tomato, garlic, oregano.</td>
+                <td>$7.50</td>
+                <td>Pizza</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>5</td>
+                <td>Saltimbocca alla Romana</td>
+                <td>Veal, prosciutto, sage, wine.</td>
+                <td>$6.00</td>
+                <td>Main Courses</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>6</td>
+                <td>Minestrone</td>
+                <td>Hearty Italian vegetable soup.</td>
+                <td>$5.00</td>
+                <td>Soups & Starters</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>7</td>
+                <td>Panna Cotta</td>
+                <td>Creamy set Italian dessert. </td>
+                <td>$6.00</td>
+                <td>Desserts</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>8</td>
+                <td>Gelato</td>
+                <td>Dense Italian-style ice cream.</td>
+                <td>$6.00</td>
+                <td>Desserts</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>9</td>
+                <td>Pizza Quattro Formaggi</td>
+                <td>Four-cheese Italian-style pizza.</td>
+                <td>$6.00</td>
+                <td>Pizza</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+            <tr class="table-data">
+                <td>10</td>
+                <td>Caprese Salad</td>
+                <td>Tomato, mozzarella, basil salad.</td>
+                <td>$6.00</td>
+                <td>Salad</td>
+                <td>
+                    <a href="edit_item.php" class="btn btn-warning">Edit</a>
+                    <a href="delete_item.php" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+
+        </table>
+    </section>
 </body>
 
 </html>

@@ -11,6 +11,18 @@ body {
     color: #fff;
 }
 
+.universal-btn {
+    background-color: #470c0c;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .login-container {
     border: 2px solid red;
     padding: 30px;
@@ -55,7 +67,7 @@ body {
     height: 100%;
 }
 
-.dashboard-container .dashboard-header {
+.dashboard-header {
     width: 20%;
     height: 100%;
     position: fixed;
@@ -63,7 +75,7 @@ body {
     padding: 15px;
 }
 
-.dashboard-container .dashboard-content {
+.dashboard-content {
     width: 80%;
     height: 100%;
     padding: 15px;
@@ -71,42 +83,43 @@ body {
     right: 0;
 }
 
-.dashboard-container .dashboard-header .logo {
+.dashboard-header .logo {
     margin: auto;
     height: 180px;
     width: 180px;
 }
 
-.dashboard-container .dashboard-header .logo img {
+.dashboard-header .logo img {
     height: 100%;
     width: 100%;
 }
 
-.dashboard-container .dashboard-header .slider-section {
+.dashboard-header .slider-section {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
 
-.dashboard-container .dashboard-header .slider-section h3 {
+.dashboard-header .slider-section h3 {
     margin-bottom: 10px;
     padding: 15px;
+    font-size: 24px;
     font-weight: 500;
 }
 
-.dashboard-container .dashboard-header .slider-section h3 a {
+.dashboard-header .slider-section h3 a {
     color: #fff;
     text-decoration: none;
 
 }
 
-.dashboard-container .dashboard-header .slider-section h3:hover {
+.dashboard-header .slider-section h3:hover {
     background-color: #fff;
     cursor: pointer;
 
 }
 
-.dashboard-container .dashboard-header .slider-section h3:hover a {
+.dashboard-header .slider-section h3:hover a {
     color: #470c0c;
 }
 
@@ -190,6 +203,65 @@ body {
     font-size: 28px;
     margin-bottom: 100px;
 }
+
+.title {
+    font-size: 38px;
+    color: white;
+}
+
+/* .managment-container */
+.management-container {
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    position: absolute;
+    border-radius: 8px;
+    right: 0;
+}
+
+.management-container .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.management-container .menu-header h3 {
+    color: #470c0c;
+}
+
+.menu-management {
+    margin: auto;
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    color: #470c0c;
+}
+
+.menu-management th {
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.menu-management td {
+    padding: 10px 5px;
+    color: black;
+    border-bottom: 1px solid #999797;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 footer {
     text-align: center;
