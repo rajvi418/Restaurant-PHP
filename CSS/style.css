@@ -298,6 +298,35 @@ body {
     margin-bottom: 20px;
 }
 
+.option {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option h4 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.option p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.options-container {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #470c0c;
+    padding: 30px;
+}
+
+
 footer {
     text-align: center;
     border-radius: 8px;
@@ -305,5 +334,18 @@ footer {
     background-color: white;
     color: #470c0c;
     width: 100%;
+    font-size: 18px;
+}
+
+.settings-footer {
+    text-align: center;
+    border-radius: 8px;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    color: #470c0c;
+    width: 98%;
+    bottom: 0;
+    position: absolute;
     font-size: 18px;
 }
