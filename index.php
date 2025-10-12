@@ -12,10 +12,10 @@
 <body>
     <section class="login-container">
         <h1>Admin Login</h1>
-        <form action="Pages/Dashboard.html" method="post">
+        <form action="Pages/Dashboard.php" method="post">
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
-            <a href="Pages/Dashboard.html"><button type="submit">Login</button></a>
+            <a href="Pages/Dashboard.php"><button type="submit">Login</button></a>
         </form>
     </section>
 </body>

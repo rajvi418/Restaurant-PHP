@@ -14,19 +14,19 @@
             <img src="../Logo/logo.png" alt="Logo">
         </div>
         <div class="slider-section">
-            <a href="../Pages/Dashboard.html">
+            <a href="../Pages/Dashboard.php">
                 <h3>Dashboard</h3>
             </a>
-            <a href="../Pages/menu-management.html">
+            <a href="../Pages/menu-management.php">
                 <h3>Menu Management</h3>
             </a>
-            <a href="../Pages/staff-management.html">
+            <a href="../Pages/staff-management.php">
                 <h3>Staff Management</h3>
             </a>
-            <a href="../Pages/settings.html">
+            <a href="../Pages/settings.php">
                 <h3>Settings & Preferences</h3>
             </a>
-            <a href="../Pages/account.html">
+            <a href="../Pages/account.php">
                 <h3>Account</h3>
             </a>
         </div>
