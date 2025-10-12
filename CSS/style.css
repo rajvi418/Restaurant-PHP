@@ -129,26 +129,25 @@ body {
     margin-top: 20px;
 }
 
-.dashboard-header .slider-section h3 {
+.dashboard-header .slider-section a {
     margin-bottom: 10px;
     padding: 15px;
-    font-size: 24px;
-    font-weight: 500;
-}
-
-.dashboard-header .slider-section h3 a {
-    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
     text-decoration: none;
-
 }
 
-.dashboard-header .slider-section h3:hover {
+.dashboard-header .slider-section a h3 {
+    color: #fff;
+}
+
+.dashboard-header .slider-section a:hover {
     background-color: #fff;
     cursor: pointer;
 
 }
 
-.dashboard-header .slider-section h3:hover a {
+.dashboard-header .slider-section a:hover h3 {
     color: #470c0c;
 }
 
@@ -289,7 +288,6 @@ body {
     border-radius: 8px;
     position: absolute;
     right: 0;
-    border: 2px solid red;
 }
 
 .settings-header h3 {
@@ -299,7 +297,7 @@ body {
 }
 
 .option {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -314,6 +312,12 @@ body {
     font-size: 16px;
     color: #555;
     margin-bottom: 8px;
+}
+
+.option .universal-btn {
+    align-self: center;
+    cursor: pointer;
+    border: none;
 }
 
 .options-container {
