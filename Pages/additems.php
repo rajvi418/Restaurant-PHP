@@ -1,33 +1,33 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $id = htmlspecialchars($_POST['id']);
-    $name = htmlspecialchars($_POST['name']);
-    $description = htmlspecialchars($_POST['description']);
-    $price = htmlspecialchars($_POST['price']);
-    $category = htmlspecialchars($_POST['category']);
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//     $id = htmlspecialchars($_POST['id']);
+//     $name = htmlspecialchars($_POST['name']);
+//     $description = htmlspecialchars($_POST['description']);
+//     $price = htmlspecialchars($_POST['price']);
+//     $category = htmlspecialchars($_POST['category']);
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "restraurant_db";
+//     $servername = "localhost";
+//     $username = "root";
+//     $password = "";
+//     $dbname = "restraurant_db";
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+//     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+//     if ($conn->connect_error) {
+//         die("Connection failed: " . $conn->connect_error);
+//     }
 
-    $sql = "INSERT INTO items (id, name, description, price, category)
-            VALUES ('$id', '$name', '$description', '$price', '$category')";
+//     $sql = "INSERT INTO items (id, name, description, price, category)
+//             VALUES ('$id', '$name', '$description', '$price', '$category')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "<script>alert('Item added successfully!');</script>";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
+//     if ($conn->query($sql) === TRUE) {
+//         echo "<script>alert('Item added successfully!');</script>";
+//     } else {
+//         echo "Error: " . $sql . "<br>" . $conn->error;
+//     }
 
-    $conn->close();
-}
+//     $conn->close();
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
