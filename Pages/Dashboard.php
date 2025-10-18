@@ -17,7 +17,7 @@
             </div>
 
             <div class="slider-section">
-                <a href="../Pages/Dashboard.php">
+                <a href="Dashboard.php">
                     <h3>Dashboard</h3>
                 </a>
                 <a href="../Pages/menu-management.php">

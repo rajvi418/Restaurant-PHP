@@ -1,3 +1,21 @@
+<?php
+// --- Connect to the database ---
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "restraurant_db"; // 🔹 Replace with your DB name
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// --- Fetch all items from database ---
+$sql = "SELECT * FROM items";
+$result = $conn->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +35,7 @@
             <a href="../Pages/Dashboard.php">
                 <h3>Dashboard</h3>
             </a>
-            <a href="../Pages/menu-management.php">
+            <a href="menu-management.php">
                 <h3>Menu Management</h3>
             </a>
             <a href="../Pages/staff-management.php">
@@ -34,7 +52,7 @@
     <section class="content-container">
         <div class="menu-header">
             <h3 class="title">Restaurant Menu</h3>
-            <a href="add_item.php" class="universal-btn">+ Add Item</a>
+            <a href="additems.php" class="universal-btn">+ Add Item</a>
         </div>
         <table class="menu-management">
             <tr class="table-header">
@@ -45,6 +63,30 @@
                 <th>Category</th>
                 <th>Actions</th>
             </tr>
+            <?php
+            // --- Display each row ---
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr class='table-data'>";
+                    echo "<td>" . htmlspecialchars($row['id']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['name']) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['description']) . "</td>";
+                    echo "<td>$" . number_format($row['price'], 2) . "</td>";
+                    echo "<td>" . htmlspecialchars($row['category']) . "</td>";
+                    echo "<td>
+                            <a href='edit_item.php?id=" . $row['id'] . "' class='btn btn-warning'>Edit</a>
+                            <a href='delete_item.php?id=" . $row['id'] . "' class='btn btn-danger' 
+                               onclick='return confirm(\"Are you sure you want to delete this item?\")'>Delete</a>
+                          </td>";
+                    echo "</tr>";
+                }
+            } else {
+                echo "<tr><td colspan='6'>No menu items found.</td></tr>";
+            }
+
+            $conn->close();
+            ?>
+
             <tr class="table-data">
                 <td>1</td>
                 <td>Margherita Pizza</td>

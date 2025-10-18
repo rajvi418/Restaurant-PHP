@@ -14,13 +14,13 @@
         <h1>Registration Page</h1>
         <form action="../index.php" method="post">
             <div class="input-group">
-                <label>First Name:</label>
-                <input type="text" name="first_name" required>
+                <label>Name:</label>
+                <input type="text" name="name" required>
             </div>
 
             <div class="input-group">
-                <label>Last Name:</label>
-                <input type="text" name="last_name" required>
+                <label>Username:</label>
+                <input type="text" name="username" required>
             </div>
 
             <div class="input-group">
