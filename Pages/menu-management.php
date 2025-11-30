@@ -111,7 +111,7 @@ if (!$result) {
         }
 
         .update-btn {
-            background-color: #4CAF50;
+            background-color: #470c0c;
             color: white;
         }
 
@@ -121,7 +121,7 @@ if (!$result) {
         }
 
         .update-btn:hover {
-            background-color: #45a049;
+            background-color: #470c0c;
         }
 
         .delete-btn:hover {
@@ -137,6 +137,7 @@ if (!$result) {
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
             display: flex;
+            color: black;
             justify-content: center;
             align-items: center;
             z-index: 1000;
@@ -179,7 +180,7 @@ if (!$result) {
         }
 
         .cancel-btn {
-            background-color: #6c757d;
+            background-color: #91979dff;
             color: white;
             padding: 8px 16px;
             border: none;
@@ -189,30 +190,12 @@ if (!$result) {
         }
 
         .submit-btn {
-            background-color: #007bff;
+            background-color: #470c0c;
             color: white;
             padding: 8px 16px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-        }
-
-        .error-message {
-            background-color: #f8d7da;
-            color: #721c24;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            border: 1px solid #f5c6cb;
-        }
-
-        .success-message {
-            background-color: #d4edda;
-            color: #155724;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            border: 1px solid #c3e6cb;
         }
 
         /* Table Styles */
@@ -295,7 +278,7 @@ if (!$result) {
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th>Actions</th>
+                <th style="text-align: center;">Actions</th>
             </tr>
             <?php
             // --- Display each row ---

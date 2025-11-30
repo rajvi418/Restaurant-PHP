@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div>
                 <button class="universal-btn" type="submit">Add Item</button>
-                <button class="universal-btn back-btn"><a href="menu-management.php">Back </a></button>
+                <button class="universal-btn back-btn"><a href="menu-management.php">Back</a></button>
 
             </div>
         </form>

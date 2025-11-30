@@ -498,3 +498,58 @@ footer {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Account Section */
+.account-content {
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.account-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.info-group {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #666;
+    display: block;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    color: #333;
+    font-size: 26px;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    font-size: 20px;
+}
