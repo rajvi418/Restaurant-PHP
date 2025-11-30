@@ -26,9 +26,7 @@
                 <a href="../Pages/staff-management.php">
                     <h3>Staff Management</h3>
                 </a>
-                <a href="../Pages/settings.php">
-                    <h3>Settings & Preferences</h3>
-                </a>
+
                 <a href="../Pages/account.php">
                     <h3>Account</h3>
                 </a>
