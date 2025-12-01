@@ -57,8 +57,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../CSS/font.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <style>
         .registration-container {
             max-width: 500px;

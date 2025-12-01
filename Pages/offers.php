@@ -67,8 +67,11 @@ if ($action == 'edit' && $id > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Offers & Promotions</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../CSS/font.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <style>
         /* BASIC STYLES */
         * {
@@ -170,10 +173,6 @@ if ($action == 'edit' && $id > 0) {
             color: white;
         }
 
-        .btn:hover {
-            opacity: 0.9;
-        }
-
         /* ACTION BUTTONS */
         .action-buttons {
             position: absolute;
@@ -267,10 +266,6 @@ if ($action == 'edit' && $id > 0) {
             margin-right: 20px;
             font-weight: bold;
         }
-
-        .page-links a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 
@@ -286,6 +281,9 @@ if ($action == 'edit' && $id > 0) {
             </a>
             <a href="../Pages/menu-management.php">
                 <h3>Menu Management</h3>
+            </a>
+            <a href="../Pages/inventory.php">
+                <h3>Inventory Management</h3>
             </a>
             <a href="../Pages/staff-management.php">
                 <h3>Staff Management</h3>
@@ -303,7 +301,7 @@ if ($action == 'edit' && $id > 0) {
         <div class="container">
             <!-- PAGE HEADER -->
             <div class="header">
-                <h1>🎉 Offers & Promotions</h1>
+                <h1>Offers & Promotions</h1>
             </div>
 
             <!-- NAVIGATION LINKS -->
@@ -422,16 +420,6 @@ if ($action == 'edit' && $id > 0) {
                 const today = new Date().toISOString().split('T')[0];
                 dateInput.min = today;
             }
-
-            // Auto-hide messages after 5 seconds
-            setTimeout(() => {
-                const messages = document.querySelectorAll('.message');
-                messages.forEach(msg => {
-                    msg.style.opacity = '0';
-                    msg.style.transition = 'opacity 1s';
-                    setTimeout(() => msg.remove(), 1000);
-                });
-            }, 5000);
         };
 
         // Confirm delete

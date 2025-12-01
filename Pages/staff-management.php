@@ -98,6 +98,9 @@ $staff_result = $conn->query($staff_sql);
 <head>
     <meta charset="UTF-8">
     <title>Staff Management</title>
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../CSS/font.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <style>
@@ -245,26 +248,33 @@ $staff_result = $conn->query($staff_sql);
 </head>
 
 <body>
-    <header class="dashboard-header">
+    <header class="dashboard-header ">
         <div class="logo">
             <img src="../Logo/logo.png" alt="Logo">
         </div>
+
         <div class="slider-section">
-            <a href="../Pages/Dashboard.php">
+            <a href="Dashboard.php">
                 <h3>Dashboard</h3>
             </a>
             <a href="../Pages/menu-management.php">
                 <h3>Menu Management</h3>
             </a>
-            <a href="staff-management.php">
+            <a href="../Pages/inventory.php">
+                <h3>Inventory Management</h3>
+            </a>
+            <a href="../Pages/staff-management.php">
                 <h3>Staff Management</h3>
+            </a>
+            <a href="../Pages/offers.php">
+                <h3>Offers & Promotions</h3>
             </a>
             <a href="../Pages/account.php">
                 <h3>Account</h3>
             </a>
         </div>
-    </header>
 
+    </header>
     <section class="content-container">
         <div class="menu-header">
             <h3 class="title">Staff Management</h3>

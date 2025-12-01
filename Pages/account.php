@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Settings</title>
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Bootstrap/dist/css/bootstrap-utilities.css">
     <link rel="stylesheet" href="../CSS/font.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <style>
         .account-content {
             width: 50%;
@@ -19,6 +22,7 @@
             padding: 25px;
             text-align: center;
             border-radius: 8px;
+            margin-bottom: 30px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
@@ -56,7 +60,7 @@
 
 <body>
     <section class="dashboard-container">
-        <header class="dashboard-header">
+        <header class="dashboard-header ">
             <div class="logo">
                 <img src="../Logo/logo.png" alt="Logo">
             </div>
@@ -68,8 +72,14 @@
                 <a href="../Pages/menu-management.php">
                     <h3>Menu Management</h3>
                 </a>
+                <a href="../Pages/inventory.php">
+                    <h3>Inventory Management</h3>
+                </a>
                 <a href="../Pages/staff-management.php">
                     <h3>Staff Management</h3>
+                </a>
+                <a href="../Pages/offers.php">
+                    <h3>Offers & Promotions</h3>
                 </a>
                 <a href="../Pages/account.php">
                     <h3>Account</h3>
@@ -109,6 +119,9 @@
                     </div>
                 </div>
             </div>
+            <footer class="dashboard-footer">
+                <p>&copy; 2024 Restaurant Management System. All rights reserved.</p>
+            </footer>
         </section>
     </section>
 
