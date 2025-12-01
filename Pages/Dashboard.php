@@ -26,7 +26,9 @@
                 <a href="../Pages/staff-management.php">
                     <h3>Staff Management</h3>
                 </a>
-
+                <a href="../Pages/offers.php">
+                    <h3>Offers & Promotions</h3>
+                </a>
                 <a href="../Pages/account.php">
                     <h3>Account</h3>
                 </a>
